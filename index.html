@@ -6,20 +6,14 @@
 <meta http-equiv='refresh' content='30'>
 <title>Live Turnierstand</title>
 <style>
-html,body{
-margin:0;
-padding:0;
-background:#f4f6f8;
-font-family:Arial;
-overflow-x:hidden;
-}
+body{font-family:Arial;background:#f4f6f8;margin:0;padding:10px;}
 .container{
 max-width:900px;
 margin:auto;
-padding:12px;
 background:white;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.15);
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 .nav{
 display:flex;
@@ -29,70 +23,79 @@ margin-bottom:15px;
 .nav a{
 flex:1;
 text-align:center;
-padding:12px;
+padding:10px;
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:6px;
 font-weight:bold;
 }
-.active{background:#1976d2;}
-.secondary{background:#2e7d32;}
-h1{margin:0;font-size:24px;}
-h2{margin-top:5px;color:#666;font-size:16px;}
+.blue{background:#1976d2;}
+.green{background:#2e7d32;}
+h1{font-size:22px;margin-bottom:5px;}
+h2{font-size:16px;color:#555;margin-top:0;margin-bottom:15px;}
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:10px;
+font-size:14px;
 }
 th{
 background:#424242;
 color:white;
-padding:10px;
-font-size:14px;
+padding:8px;
+text-align:center;
 }
 td{
-padding:8px;
+padding:6px;
 border-bottom:1px solid #ddd;
-font-size:14px;
+text-align:center;
 }
 .group{
 background:#616161;
 color:white;
 font-weight:bold;
+text-align:left;
+padding:6px;
+}
+.mobile{display:none;margin-top:10px;}
+.card{
+background:#ffffff;
+border-radius:8px;
+padding:10px;
+margin-bottom:10px;
+box-shadow:0 1px 4px rgba(0,0,0,0.1);
+}
+.card-title{
+font-weight:bold;
+font-size:15px;
+margin-bottom:4px;
+}
+.card-sub{
+font-size:13px;
+color:#666;
+margin-bottom:4px;
+}
+.card-points{
+font-weight:bold;
+margin-bottom:4px;
+}
+.card-players{
+font-size:13px;
+color:#333;
+}
+@media(max-width:700px){
+table{display:none;}
+.mobile{display:block;}
 }
 .update{
 margin-top:10px;
-color:#777;
 font-size:12px;
-}
-@media (max-width:600px){
-.container{
-border-radius:0;
-box-shadow:none;
-}
-table, tbody, tr, td{
-display:block;
-width:100%;
-}
-th{
-display:none;
-}
-tr{
-margin-bottom:12px;
-background:#fafafa;
-border-radius:8px;
-padding:8px;
-}
-td{
-border:none;
-padding:6px;
-}
+color:#666;
 }
 </style>
 </head>
 <body>
 <div class='container'>
-<div class='nav'><a href='index.html' class='active'>Turnierliste</a><a href='gesamt.html' class='secondary'>Gesamtrangliste</a></div><h1>Live Turnierstand</h1><h2>Grenzcup Open 2026 (MGC Feldkirch)</h2><table>
+<div class='nav'><a class='green' href='index.html'>Turnierliste</a><a class='blue' href='gesamt.html'>Gesamtrangliste</a></div><h1>Live Turnierstand</h1><h2>Grenzcup Open 2026 (MGC Feldkirch)</h2><table>
 <tr><td colspan='8' class='group'>Gruppe 1</td></tr>
 <tr><td colspan='8' class='group'>Gruppenname (optional)</td></tr>
 <tr><td>Spieler Name</td><td>R1</td><td>P1</td><td>R2</td><td>P2</td><td>R3</td><td>P3</td><td>Gesamt</td></tr>
@@ -111,4 +114,4 @@ padding:6px;
 <tr><td>Bernd Hess</td><td>31</td><td>1</td><td>33</td><td>1</td><td>27</td><td>1</td><td>3</td></tr>
 <tr><td>SUMME PUNKTE:</td><td></td><td>5</td><td></td><td>4</td><td></td><td>5</td><td>14</td></tr>
 </table>
-<div class='update'>Letztes Update: 23.02.2026 18:23:33</div></div></body></html>
+<div class='update'>Letztes Update: 23.02.2026 18:45:34</div></div></body></html>
